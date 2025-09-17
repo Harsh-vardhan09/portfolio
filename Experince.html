@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            justify-items: center;
+
+        }
+        .card{
+            height: 60vh;
+            width: 45vh;
+            background-color: #E9E3DF;
+            margin-top: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+
+        .card img{
+            width: 100%;
+            height: 60%;
+            margin-top: 0;margin-left: 0;margin-right: 0;
+            border-radius: 15px 15px 0 0 ;
+        }
+        .card-container{
+            padding: 0;
+        }
+        .card-container h4{
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-container p{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease;
+        }
+    </style>
 </head>
 <body>
-    
+    <section>
+        <div class="main-line" >
+            <div class="left">!HARSH!</div>
+            <div id="center">
+                    <a href="/Index.html">Home</a>
+                    <a href="Contact.html">contact</a>
+                    <a href="Education.html">Education</a>               
+                    <a href="Projects.html">Projects</a>
+                    <a href="Experince.html">Experince</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Experience and Certificate</h1>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D22AQHhfm4PVh5Nbg/feedshare-shrink_2048_1536/B4DZkGQituGkAw-/0/1756746624889?e=1761177600&v=beta&t=DVYMLFma2kks62ob7YqZomAiXJenbuUosptj61p6l3Y" alt="">
+                <div class="card-container">
+                    <h4>GDG Challenge solution</h4>
+                    <p>a hack-a-thon led by gdg that leads to innovation and growth</p>
+                </div>    
+            </div>
+
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQEKyUrmrEESoA/feedshare-shrink_2048_1536/B4DZkBHUDRGkAw-/0/1756660319878?e=1761177600&v=beta&t=uewm6LKmYW89Ln87oCDuGoZ1mHH09_QhWX6S-UeMZNg" alt="">
+                    <div class="card-container">
+                        <h4>Accenture job simulation</h4>
+                        <p>Completed virtual internship, gained practical skills in consulting projects.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQHEq7q5WaOrlg/feedshare-shrink_2048_1536/B4DZkBHBMpGgAw-/0/1756660242528?e=1761177600&v=beta&t=t3SQ8UE9-TToGM6_41Vyc1y4D_1qsxLXLNGc0B-nmZg" alt="">
+                    <div class="card-container">
+                        <h4>Goldman sachs job simulation</h4>
+                        <p>Completed virtual internship, learned finance and analytical problem-solving skills.</p>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQGB_VxmZPqiGg/feedshare-shrink_2048_1536/B4DZkBGqoHIgAw-/0/1756660151165?e=1761177600&v=beta&t=d7abvhCisUoRLmchsISQvSkruyC9bxIPKxxcQkMThDs" alt="">
+                    <div class="card-container">
+                        <h4>MLSA internship</h4>
+                        <p>completed an internship from MLSA in web-dev that allowed me to learn alot from the seniors</p>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQGheyaab0Wi6A/feedshare-shrink_2048_1536/B4DZkBFFIXGsA0-/0/1756659735178?e=1761177600&v=beta&t=UDeQe1nGzXCaiy9Yw8X4YAy9rvkm5ID0S7utxHOYa44" alt="">
+                    <div class="card-container">
+                        <h4>UI/UX bootcsmp</h4>
+                        <p>Attended UI/UX bootcamp, learned design principles and prototyping tools.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
 </body>
 </html>

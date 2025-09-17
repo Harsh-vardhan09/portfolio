@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --tilt-angle:5deg;
+            --zoom-scale:1.05;
+            
+        }
+        
+        body{
+            background-color: aliceblue;
+        }
+        .cards{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .cards a{
+            text-decoration: none;
+        }
+        .cards a div{
+            display: flex; width: 80%; height: auto; border: 3px solid black; flex-direction: column; align-items: center; margin-top: 10vh; margin-left: 16vh;font-weight: bold;color:black ;
+        } 
+
+        .cards a div h3{
+            font-size: 30px;
+        }
+
+        .cards a div p{
+            font-size: 14px;
+            padding: 15px;
+            color: blueviolet;
+        }
+        .cards a div:hover{
+            border-radius: 30px;
+            border:3px solid red;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+            transform: scale(var(--zoom-scale));
+            transition: .3s ease;
+
+        }
+        .cards a div img:hover{
+            border-radius: 30px 30px 0 0 ;
+            
+        }
+
+        .cards a div img{
+            width: 100%;
+            height: 40vh;
+            padding: 0;
+            margin: 0;
+            transition: .3s ease;
+        }
+    </style>
+    
 </head>
 <body>
-    
+    <section>
+        <div class="main-line" >
+            <div class="left">!HARSH!</div>
+            <div id="center">
+                    <a href="/Index.html">Home</a>
+                    <a href="Contact.html">contact</a>
+                    <a href="Education.html">Education</a>               
+                    <a href="Projects.html">Projects</a>
+                    <a href="Experince.html">Experince</a>
+            </div>
+        </div>
+    </section>
+        <h1 style="justify-self: center; font-size: 10vh; color:purple">Projects</h1>
+
+        <div class="cards" >
+
+            <a href="https://github.com/Harsh-vardhan09/Bright.Ed">
+                <div>
+                    <img src="https://www.crmjetty.com/wp-content/uploads/2022/03/OG_A_Guided_Tour_of_Education_Portal_Development.png" alt="">
+                    <h3> Bright.ED</h3>
+                    <p>Bright.ED is an educational website designed to make learning interactive and accessible for students of all ages.<br> It offers a variety of courses, quizzes, and resources to help users enhance their knowledge and skills. The platform features user-friendly navigation and personalized learning paths to support effective education.</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/Harsh-vardhan09/Ecommerce-clientwork">
+                <div >
+                    <img src="https://enexa.in/images/ecommerce-1.jpg?id=7d07e331392870591720b94da9b55c23" alt="">
+                    <h3> E-Commerce</h3>
+                    <p>This E-Commerce platform is a client-side website designed for selling metal products and manufacturing machines.<br> It provides an easy-to-use interface for browsing, selecting, and purchasing industrial goods. The site features detailed product listings, secure checkout, and efficient navigation to streamline the buying process for customers in the manufacturing sector.</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO24_WhatsInAName_SocialShare_S96SOzG.width-1300.png" alt="">
+                    <h3> Gemini-clone</h3>
+                    <p>Gemini-clone is a web-based application inspired by Google's Gemini AI. It simulates conversational AI interactions, allowing users to ask questions and receive intelligent responses. The project demonstrates modern web development techniques and showcases the integration of AI-like features in a user-friendly interface.</p>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+
 </body>
 </html>

@@ -1,11 +1,13 @@
+body{
+    background-color: aliceblue;
+}
 .main-line{
     height:60px;
-  
     display:grid; 
     grid-template-columns:1fr 7fr 2fr; 
     box-shadow: 5px 5PX 5PX;
     background-color: rgb(255, 255, 255);
-    
+    padding: 10px 20px 0 20px ;
 }
 .left{
     color:blueviolet ;
@@ -14,7 +16,7 @@
     font-family: cursive;
 }
 .left:hover{
-background-color: aliceblue;
+    background-color: aliceblue;
 
 }
 #center{
@@ -24,28 +26,29 @@ background-color: aliceblue;
     font-weight:700 ;
     font-size: large;
 }
-.link{
+#center a{
     padding: 15px;
+    margin-left: 25px;
 
 }
-.link:hover{
+#center a:hover{
     color: blue;
     cursor: pointer;
     border: 2px rgb(178, 175, 175) solid;
 }
 #main-body{
     display:grid; 
-   grid-template-columns:1fr 1fr;
-   height: 900px;
-   padding-left: 10px;
+    grid-template-columns:1fr 1fr;
+    height: 900px;
+    padding-left: 10px;
 }
 
 #picture{
- margin:75px
+    margin:75px
     
 }
 #hi{
-   margin-top: 100px; 
+    margin-top: 100px; 
     margin-bottom:10px;
 }
 img{
@@ -92,14 +95,24 @@ margin-left: 200px;
 .inst{
     display: grid;
     grid-template-columns:170px 1fr;
-    margin-top: 18px;
+    margin-top: 30px;
     border: black 2px solid;
     height: 150px;
     width:80%;
     font-size: 22px;
     box-shadow: 10px 10px 10px gray;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: whitesmoke;
   
 }
+
+.inst:hover{
+    transform: scale(1.02);
+    transition: .3s ease;
+}
+
+
 #logo{
     padding-top: 10px;
     margin: 0;
